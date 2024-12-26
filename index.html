@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="stylesheet" href="https://drive.google.com/file/d/1E1kH80GXlVHE86ymwck7M_DltoP6n7BU/view?usp=drive_link">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong class="dancing-script-title">Dear Nisse.</strong class="dancing-script-title">
+                        <p class="dancing-script-title">
+                            
+
+Six months. It feels like a blink, yet it’s been long enough to know that my life is better with you in it.
+
+You are my joy, my calm after a storm, and the brightest part of my day. Thank you for being my partner, my confidant, and my greatest blessing. Every laugh we’ve shared, every quiet moment, every time you’ve been there for me, I treasure it all.
+
+I’m so grateful for the love we’ve built and for the moments that are yet to come. You make me believe in forever, and I’m excited to walk toward it with you.
+
+Here’s to us, to our story, and to the countless memories we’ll create. 
+                        </p class="dancing-script-title">
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+   
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+ <audio id="myAudio" autoplay loop muted>
+    <source src="We_and_Us.mp3">
+   I didn't told you this before but, thanks for giving me the best in life,I have...cancer... in the blood. I don't have much to live, don't be sad okay? If you're wondering, we just don't have the money nvm. I just won't ever comprehend this love, thank you for everything my love. I love you always, and forever will. Happy Monthsarry Baby!
+  </audio>
+  
+  <script>
+    window.onload = function() {
+      var audio = document.getElementById("myAudio");
+      audio.muted = false; // Unmute the audio
+    }
+  </script>
+   
+      
+</body>
+</html>
